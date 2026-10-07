@@ -1,2 +1,6 @@
 # Pic_Orientation_Fixer
-This project edits picture's EXIF orientation metadata to present your pictures upright..
+This project edits picture's EXIF orientation metadata to present your pictures upright.
+
+Sometimes, pictures that you've taken will appear sideways or upside down on your device. The pictures can be edited to appear upright using various editing tools, like those found in the photo gallery. These tools create a soft display flag for the edited pictures. In many cases, that is all you need for your pictures to appear correctly where ever you choose to view them. But, some devices, such as some digital picture frames, run a fairly simple firmware that is incapable of parsing the EXIF orientation flags created by editing tools, resulting in edited pictures still appearing sideways or upside down on the device.
+
+This program asks the user to pass it a folder that contains pictures that may or may not have EXIF pixel data that results in the picture's orientation being off, and edits the actual EXIF pixel data if needed. It then adds a suffix to the file's filename, regardless of whether it was needed for that particular file or not, so the user knows the file has been passed through the program, and saves the picture file, with the new file name, to a folder of the user's choosing.
